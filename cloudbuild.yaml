@@ -10,3 +10,7 @@ steps:
     #!/usr/bin/env python3
     print("Running Python script...")
     print("Python script completed.")
+
+
+options:
+  logging: CLOUD_LOGGING_ONLY
