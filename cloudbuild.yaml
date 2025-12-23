@@ -9,7 +9,7 @@ steps:
   - name: "ubuntu"
     script: |
       #!/usr/bin/env bash
-        echo "Fetching Project ID..."`
+        echo "Fetching Project ID..."
       echo "Your Project ID IS: $PROJECT_ID"
 
 options:
