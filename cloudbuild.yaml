@@ -1,15 +1,19 @@
 steps:
-  - name: "bash"
+  - name: "ubuntu"
+
     script: |
       #!/usr/bin/env bash
         echo "Starting build process..."
-      echo "Build process completed."
+      echo "Hello $_NAME"
 
-  - name: "python"
+  - name: "ubuntu"
     script: |
       #!/usr/bin/env python
-      print("Running Python script...")
-      print("Python script completed.")
+      echo "Your Project ID IS: $PROJECT_ID"
 
 options:
+  automapSubstitutions: true
   logging: CLOUD_LOGGING_ONLY
+
+substitutions:
+  _NAME: "Bartosz"
